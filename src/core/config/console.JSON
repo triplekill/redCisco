@@ -1,0 +1,107 @@
+{
+  "Device Target Options": {
+    "host": [
+      "",
+      "[Required] The IP address used to connect to the target device",
+      ""
+    ],
+    "username": [
+      "",
+      "[Required] The Cisco SSH username used to log into the target device",
+      ""
+    ],
+    "password": [
+      "",
+      "[Required] The SSH password used to log into the target device",
+      ""
+    ],
+    "device_type": [
+      "cisco_ios",
+      "[Required] The device type used to configure communication for the target device",
+      "cisco_ios"
+    ],
+    "secret": [
+      "",
+      "[Optional] Secret password used to enable privileged mode on the target device",
+      ""
+    ],
+    "": [
+      "",
+      "",
+      ""
+    ],
+    "device_file": [
+      "",
+      "[Optional] JSON formatted file containing connection information for multiple devices",
+      ""
+    ]
+  },
+  "File Transfer Options": {
+    "tftp_server": [
+      "true",
+      "[Required] Enable this option to use a Trivial-FTP server to transfer the TCL payload scripts",
+      "true,false"
+    ],
+    "tftp_server_ip": [
+      "",
+      "[Required] The IP address of the Trivial-FTP server",
+      ""
+    ],
+    "": [
+      "",
+      "",
+      ""
+    ],
+    "ftp_server": [
+      "true",
+      "[Optional] Enable this option to use a FTP server to transfer the TCL payload scripts",
+      "true,false"
+    ],
+    "ftp_server_ip": [
+      "",
+      "[Optional] The IP address of the FTP server",
+      ""
+    ],
+    "ftp_server_port": [
+      "21",
+      "[Optional] The port number of the FTP server",
+      ""
+    ]
+  },
+
+
+  "Host Targeting Options": {
+    "ping_scan": [
+      "true",
+      "[Optional] Enable to scan each network discovered using the ICMP protocol",
+      "true,false"
+    ],
+    "": [
+      "",
+      "",
+      ""
+    ],
+    "port_scan": [
+      "true",
+      "[Optional] Enable this option to automatically port scan hosts when discovered",
+      "true,false"
+    ],
+    "port_list": [
+      "80,135-139,443,445,3306,3389",
+      "[Optional] A comma separated list of ports to scan for... i.e. (80,135-139,443,445)",
+      ""
+    ]
+  },
+  "Host Pivot Options": {
+    "socks_proxy": [
+      "true",
+      "[Optional] Enable to setup a SOCKS4 proxy on the target device (random port used unless specified)",
+      "true,false"
+    ],
+    "socks_port": [
+      "65500",
+      "[Optional] The port to open on the router to use the proxy server ",
+      ""
+    ]
+  }
+}

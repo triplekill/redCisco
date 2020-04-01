@@ -1,0 +1,67 @@
+{
+  "Server Options": {
+    "": [
+      "true",
+      "Enable to ",
+      ""
+    ],
+    "server_ip": [
+      "",
+      "Malicious TFTP Server IP that will be serving the TCL scripts",
+      ""
+    ]
+  },
+  "Single Target Options": {
+    "host": [
+      "",
+      "Hostname or IP Address to the target router",
+      ""
+    ],
+    "username": [
+      "",
+      "Username to be used on the target router",
+      ""
+    ],
+    "password": [
+      "",
+      "Password to be used on the target router",
+      ""
+    ],
+    "secret": [
+      "",
+      "Enable secret to be used on the target router",
+      ""
+    ],
+    "device_type": [
+      "cisco_ios",
+      "The device type to used during connection process",
+      "cisco_ios, cisco_asa"
+    ]
+  },
+  "Multiple Target Options": {
+    "device_file": [
+      "",
+      "JSON formatted file containing multiple targets (see samples.JSON)",
+      ""
+    ]
+  },
+  "Port Discovery Options": {
+    "port_list": [
+      "80,443,3389",
+      "A list of ports to use when scanning internal hosts (separated with commas)",
+      ""
+    ]
+  },
+  "SOCKS4 Proxy Options": {
+    "enable_proxy": [
+      "true",
+      "Enable to start a SOCKS4 proxy on target device if internal hosts discovered",
+      "true, false"
+    ],
+    "proxy_port": [
+      "",
+      "Port to use for the SOCKS4 proxy on the Cisco IOS device (randomized by default)",
+      ""
+    ]
+  }
+}
